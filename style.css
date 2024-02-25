@@ -3,10 +3,10 @@
     /* margin: 0; */
 }
 
-/* body{
-    /* background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(247,241,151,1) 50%, rgba(253,187,45,1) 100%); */
-/* } */ 
+body{
+    background:#F3F5FC;
+
+}
 
 header{
     width: 100%;
@@ -41,6 +41,8 @@ main{
     width: 80%;
     height: 80%;
     border-radius: 2%;
+    border: 2px solid #0A3871;
+    box-shadow: 10px 10px 10px lightblue;
     background-color: aliceblue;
     cursor: pointer;
     color: #0A3871 ;
@@ -60,6 +62,10 @@ main{
     display: flex;
     color: #495057
 }
+.alerta img{
+    position: relative;
+    right: 5px;
+}
 
 .contenedor-botones{
     position: absolute;
@@ -76,11 +82,18 @@ main{
     background-color: #0A3871;
     color:white;
     font-size: 16px;
-    font-weight: 400;  /* No es necesario */
-    font-family:'Inter',sans-serif;  /* no es necesario*/
+    /* font-weight: 400;  No es necesario */
+    /* font-family:'Inter',sans-serif;  no es necesario */
     border: 3px solid rgba(11, 11, 11, 0.534);
     margin-right:20px;
     cursor:pointer;
+    transition:0.7s;
+}
+
+.boton-encriptar:hover{
+    box-shadow: 5px 5px 10px #0A3871;
+    transform: scale(1.05,1.05);
+    font-size: 17px;
 }
 
 .boton-desencriptar{
@@ -95,6 +108,13 @@ main{
     border: 3px solid rgba(11, 11, 11, 0.534);
     margin-right:20px;
     cursor:pointer;
+    transition: 0.7s;
+}
+
+.boton-desencriptar:hover{
+    box-shadow: 5px 5px 10px #0A3871;
+    transform: scale(1.05,1.05);
+    font-size: 17px;
 }
 
 .seccion-2{
@@ -107,7 +127,7 @@ main{
     background-color: #ffffff;
     box-sizing: border-box;
     border-radius: 32px;
-    box-shadow: 0px 2px 32px -8px rgba(0, 0, 0, 0.50);
+    box-shadow: 10px 10px 10px lightblue;
 }
 
 .contenedor-muneco{
@@ -177,6 +197,28 @@ main{
     position: relative;
     top: 120px;
     right: 19px;
+    transition: 0.7s;
+}
+
+.boton-copiar:hover{
+    box-shadow:  5px 5px 20px #0A3871;
+    transform: scale(1.05,1.05);
+    font-size: 17px;
+}
+
+.boton-copiar:active{
+background-color: rgb(216, 223, 232);
+}
+
+.footer{
+    position: absolute;
+    top: 800px;
+    font-family: 'Inter', sans-serif;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 720px;
 }
 
 .ocultar{
